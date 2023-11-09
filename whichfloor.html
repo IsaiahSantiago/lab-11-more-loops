@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Which floor</title>
+</head>
+<body>
+    <script>
+    var maximum_stories = 60;
+    var usernum = parseInt(prompt("On what floor of the building is your office?"));
+
+    while (usernum > maximum_stories) {
+//"statement for the termination condition is NOT true, which keeps the loop going..."
+console.log("You entered: " + usernum + " but there are only " + maximum_stories + " floors in this building. Try again..." );
+usernum = parseInt(prompt("On what floor of the building is your office?"));
+
+}
+console.log("Congrats! You work on floor number: " + usernum);
+
+    </script>
+</body>
+</html>

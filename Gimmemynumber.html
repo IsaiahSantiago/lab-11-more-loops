@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gimme my number</title>
+</head>
+<body>
+    <script>
+        //use a while loop to reach a number less than 100
+    var userInput = parseInt(prompt("Gimme a number that is greater than 100... "), 10); //creating an ouput of an integer with a base 
+
+    while (userInput <= 100) {
+        console.log(userInput + " is less than 100, try again... ");
+        userInput = parseInt(prompt("Nope not what I asked forGimme a number that is greater than 100... "), 10);
+}
+//imagine that the condition has been satisfied... exited the loop...
+console.log(userInput + " is greater than 100; good Job! ")
+
+    </script>
+</body>
+</html>
